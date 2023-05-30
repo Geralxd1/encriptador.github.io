@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <img src="imagenes/Logo.png" class="logo" alt="Logo de alura">
+        <div class="principal">
+            <textarea id="texto" class="areaTexto" placeholder="Ingrese el texto aqui"></textarea>
+            <button onclick="leerTexto(1)" class="boton1">Encriptar</button>
+            <button onclick="leerTexto(2)" class="boton2">Desencriptar</button>
+        </div>
+        <textarea id="textoEncriptado" class="textoEncriptado" placeholder="Aqui ira la encriptacion" disabled></textarea>
+    </main>
+    <footer>Presentado por: Geraldy Brenda Cutipa Incacutipa</footer>
+</body>
+<script src="javascript.js"></script>
+</html>

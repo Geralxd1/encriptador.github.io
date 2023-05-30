@@ -1,0 +1,74 @@
+body{
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo{
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+.areaTexto{
+    position: absolute;
+    resize:none;
+    width: 600px;
+    height: 400px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+    background: transparent;
+}
+.areaTexto::placeholder { 
+    color: #0A3871; 
+}
+.areaTexto:focus {
+    outline-color: transparent; /* Cambia "red" por el color deseado */
+}
+.boton1,.boton2{
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    margin-top: 600px;
+    border-radius: 15px;
+    border-color: #F3F5FC;
+    background: #0A3871;
+    color: #F3F5FC;
+    font-size: x-large;
+}
+.boton1{
+    margin-left: 300px;
+}
+.boton2{
+    margin-left: 600px;
+}
+.textoEncriptado{
+    position: absolute;
+    width: 400px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    font-size: x-large;
+    color: #0A3871;
+    padding: 30px;
+}
+.textoEncriptado::placeholder { 
+    color: #0A3871; 
+}
+footer{
+    position: absolute;
+    margin-top: 700px;
+    color: #0A3871;
+    margin-right: auto;
+    margin-left: 500px;
+    font-weight: bold;
+}
