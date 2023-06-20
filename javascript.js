@@ -1,10 +1,3 @@
-// Obtener el largo de la pantalla
-var pantallaLargo = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-pantallaLargo = parseInt(pantallaLargo);
-pantallaLargo = pantallaLargo - 150;
-// Ajustar el tamaño del div
-var div = document.getElementById("textoEncriptado"); // Reemplaza "miDiv" con el ID de tu propio div
-div.style.height = pantallaLargo + "px";
 var reemplazos = {
     "a": "ai",
     "e": "enter",
@@ -44,3 +37,8 @@ function desencriptar(textoOriginal){
     });
     escribirTexto(textoModificado);
 }
+function copyToClipboard() {
+    var textarea = document.getElementById("textoEncriptado");
+    textarea.select();
+    navigator.clipboard.writeText(textarea.value)
+} 
