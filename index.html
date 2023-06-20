@@ -13,15 +13,24 @@
 </head>
 <body>
     <main>
-        <img src="imagenes/Logo.png" class="logo" alt="Logo de alura">
-        <div class="principal">
-            <textarea id="texto" class="areaTexto" placeholder="Ingrese el texto aqui"></textarea>
-            <button onclick="leerTexto(1)" class="boton1">Encriptar</button>
-            <button onclick="leerTexto(2)" class="boton2">Desencriptar</button>
+        <div class="contenedor1">
+            <img src="imagenes/Logo.png" class="logo" alt="Logo de alura">
         </div>
-        <textarea id="textoEncriptado" class="textoEncriptado" placeholder="Aqui ira la encriptacion" disabled></textarea>
+        <div class="contenedor2">
+            <textarea id="texto" class="areaTexto" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="botones">
+                <button onclick="leerTexto(1)" class="boton1">Encriptar</button>
+                <button onclick="leerTexto(2)" class="boton2" >Desencriptar</button>
+            </div>
+        </div>
+        <div class="contenedor3">
+            <textarea id="textoEncriptado" class="textoEncriptado" placeholder="Aqui ira la encriptacion" disabled></textarea>
+            <button onclick="copyToClipboard()" class="botonCopia">Copy</button>
+        </div>
     </main>
-    <footer>Presentado por: Geraldy Brenda Cutipa Incacutipa</footer>
+    <footer>
+        <p>Con &#128150 Por: Geraldy Cutipa Incacutipa</p>
+    </footer>
 </body>
 <script src="javascript.js"></script>
 </html>
